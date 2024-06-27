@@ -22,7 +22,3 @@ jobs:
       run: ./configure
     - name: make
       run: make
-    - name: make btcdeb
-      run: make btcdeb
-    - name: make all
-      run: make all
