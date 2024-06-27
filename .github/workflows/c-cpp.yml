@@ -14,6 +14,8 @@ jobs:
     runs-on: ${{ matrix.os }}
     steps:
     - uses: actions/checkout@v4
+    - run: brew install autoconf automake make || true
+      if: github.event_name == 'push' && matrix.os == 'macos-latest'
     - name: autogen.sh
       run: ./autogen.sh
     - name: configure
