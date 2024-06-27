@@ -101,3 +101,7 @@ share/qt/Info.plist
 test-btcdeb
 tap
 approach
+
+# secp256k1
+secp256k1/gen_context
+secp256k1/src/ecmult_static_context.h
